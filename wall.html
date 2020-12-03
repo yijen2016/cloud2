@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+
+    <title>雲管家</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/skin.css">
+    <link rel="stylesheet" type="text/css" href="styles/framework.css">
+    <link rel="stylesheet" type="text/css" href="styles/custom.css">
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Content -->
+    <div id="page-content" class="page-content header-clear-full">
+        <div id="page-content-scroll">
+
+            <div class="heading-strip bg-2">
+                <h3 class="header12">動態牆</h3>
+                <i class="fa fa-chevron-circle-left" onClick="javascript:history.back(1)"></i>
+            </div>
+
+            <div class="blog-sidebar-search full-bottom2" >
+                <i class="fa fa-search"></i>
+                <input type="text" value="Search">
+            </div>
+
+            <div class="content">
+
+                <div class="page-blog">
+                    <div class="page-blog-list">
+
+                        <section>
+                            <div class="page-blog-list-by">
+                                <img class="preload-image" data-original="images/user.svg" alt="img">
+                                <strong><span>雲管家公開交流專區</span>－颱風來襲請準備</strong>
+                                <em>14:00:32 </em>
+                            </div>
+                            <div class="page-blog-content">
+                                <p>
+                                    週末颱風來襲；大家要作好門窗檢查。也要到賣場補充食品、用品；大風大雨，大家出門也要注意安全哦！
+                                </p>
+
+                            </div>
+                            <a href="all-inner.html"><i class="fa fa-comment" style="font-size:18px;"></i><span>&nbsp;13</span></a>
+
+                            <div class="decoration decoration-margins"></div>
+                        </section>
+
+                        <section>
+                            <div class="page-blog-list-by">
+                                <img class="preload-image" data-original="images/user.svg"  alt="img">
+                                <strong><span>雲管家公開交流專區</span>－颱風來襲請準備</strong>
+                                <em>14:00:32 </em>
+                            </div>
+                            <div class="page-blog-content">
+                                <p>
+                                    週末颱風來襲；大家要作好門窗檢查。也要到賣場補充食品、用品；大風大雨，大家出門也要注意安全哦！
+                                </p>
+
+                            </div>
+                            <a href="all-inner.html"><i class="fa fa-comment" style="font-size:18px;"></i><span>&nbsp;13</span></a>
+
+                            <div class="decoration decoration-margins"></div>
+                        </section>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+    
+    </div>
+
+    <!-- End Content dropdown -->
+    
+
+   <!-- Fixed Button -->
+    <div class="page-menu light-footer-menu">
+        <div class="footer-menu-wrapper remove-menu">
+            <div class="footer-menu-scroll">
+                <div class="footer-menu">
+                    <a href="social.html" class="footer-menu-item">
+                        <em>社區選擇</em><i class="scale-hover bg-blue-dark fa fa-home"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-menu-controls light-footer-menu">
+        <a href="#" class="footer-menu-open"><i class="scale-hover bg-green-dark fa fa-navicon"></i></a>
+        <a href="#" class="footer-menu-close remove-menu"><i class="fa fa-times bg-yellow-dark"></i><em>Close</em></a>
+    </div>
+   
+    <div class="footer-menu-background light-footer-background remove-menu"></div>
+
+    <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to Top</a>
+
+    <!-- End Fixed Button -->
+
+    <!-- 限制字數 -->
+    <script>
+        $(function() {
+            var len = 12; // header超過12個字以"..."取代
+            $(".header12").each(function(i) {
+                if ($(this).text().length > len) {
+                    $(this).attr("title", $(this).text());
+                    var text = $(this).text().substring(0, len - 1) + "...";
+                    $(this).text(text);
+                }
+            });
+
+            var len = 14; // 看板名稱超過14個字以"..."取代
+            $(".board").each(function(i) {
+                if ($(this).text().length > len) {
+                    $(this).attr("title", $(this).text());
+                    var text = $(this).text().substring(0, len - 1) + "...";
+                    $(this).text(text);
+                }
+            });
+
+            var len = 6; // 版主超過6個字以"..."取代
+            $(".host").each(function(i) {
+                if ($(this).text().length > len) {
+                    $(this).attr("title", $(this).text());
+                    var text = $(this).text().substring(0, len - 1) + "...";
+                    $(this).text(text);
+                }
+            });
+
+            var len = 8; // 社區超過8個字以"..."取代
+            $(".area").each(function(i) {
+                if ($(this).text().length > len) {
+                    $(this).attr("title", $(this).text());
+                    var text = $(this).text().substring(0, len - 1) + "...";
+                    $(this).text(text);
+                }
+            });
+
+        });
+    </script>
+    <!-- End 限制字數 -->
+
+
+</body>

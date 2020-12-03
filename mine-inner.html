@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+
+    <title>雲管家</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/skin.css">
+    <link rel="stylesheet" type="text/css" href="styles/framework.css">
+    <link rel="stylesheet" type="text/css" href="styles/custom.css">
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Content -->
+    <div id="page-content" class="page-content header-clear-full">
+        <div id="page-content-scroll">
+
+            <div class="heading-strip bg-2">
+                <h3 class="header12">自己的寵物自己洗</h3>
+                <i class="fa fa-chevron-circle-left" onClick="javascript:history.back(1)"></i>
+            </div>
+
+            <div class="content no-material">
+                <div class="home-tabs">
+                    <a class="activate-tab-1 active-home-tab" href="#">看版主題</a>
+                    <a class="activate-tab-2" href="#">看版資料</a>
+                    <a class="activate-tab-3" href="#">看版版友</a>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="content no-material" id="tab-1">
+
+                <div class="thumb-layout thumb-layout-page">
+
+                    <section>
+                        <strong>我家也是柴犬，有更好跑的地方嗎？
+</strong>
+                        <em>發表人：XXX</em>
+                        <em>2017.8.11 15:03:22</em>
+                        <div class="button no-border btn-right button-red btn-top " onclick="javascript:location.href='#'">刪除</div>
+                        <div class="decoration decoration-margins"></div>
+                    </section>
+
+                    <section>
+                        <strong>我不覺得在社區中應該養狗，沒公德心！！
+
+</strong>
+                        <em>發表人：XXX</em>
+                        <em>2017.8.11 15:03:22</em>
+                        <div class="button no-border btn-right button-red btn-top " onclick="javascript:location.href='#'">刪除</div>
+                        <div class="decoration decoration-margins"></div>
+                    </section>
+
+                </div>
+
+                <div class="footer-margin"></div>
+            </div>
+
+            <div class="content no-material" id="tab-2">
+                <!-- Content form -->
+                <div class="content material-full-bottom">
+
+                    <div class="container no-bottom">
+                        <div class="contact-form no-bottom">
+
+                             <!-- form -->
+                        <form >
+                           
+
+                                <div >
+                                    <label style="font-size:15px;">申請社區：XXXX</label>
+                                </div>
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactNameField">版主暱稱：</label>
+                                    <input type="text" name="text" class="contactField"  />
+                                </div>
+                                
+                                <div class="formFieldWrap">
+                                    <label class="field-title contactNameField">看板名稱：</label>
+                                    <input type="text" name="text" class="contactField"  />
+                                </div>
+                                
+                                <div class="formTextareaWrap">
+                                 <label class="field-title contactMessageTextarea" for="contactMessageTextarea">看板簡介：</label>
+                                <textarea name="message" class="contactTextarea"></textarea>
+                            </div>
+
+                               
+                             <!-- Photo Upload -->
+
+                    <div class="fileUpload ">
+                        <span>頭像上傳</span>
+                        <input type="file" class="upload" />
+                    </div>
+                    <!-- End Photo Upload -->
+
+                                <div >
+                                    <label class="field-title" >看板狀態：
+                                       
+                                      
+                                        <select id="word" name="provicy" class="provicy " onchange="run()">
+                                        <option value="" >請選擇</option>
+                                            <option value="不需加入好友，可瀏覽社群內容並互動" >全開放</option>
+                                        
+                                            <option value="開放瀏覽，需加入好友才可以進行互動">半開放</option>
+                                        
+                                            <option value="需加入好友，才可瀏覽及互動">隱私</option>
+                                        </select>
+                                        
+                                       <input type="text" id="srt" class="select-word"><br>
+
+                                    </label>
+
+                                </div>
+                                
+                                 <div class="formFieldWrap">
+                                    <label class="field-title contactNameField">通知Email：</label>
+                                    <input type="text" name="text" class="contactField"  />
+                                </div>
+                                
+                                
+
+                                <div class="decoration decoration-margins"></div>
+                                                              <input type="submit" class="button no-border  button-green" value="儲存修改" style="width:100%"/>
+                          
+                        </form>
+                        
+                           <!-- End form -->
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Content form -->
+
+                <div class="footer-margin"></div>
+            </div>
+
+            <div class="content-fullscreen" id="tab-3">
+                <!-- Content dropdown -->
+                <div class="material-full-bottom">
+                    <!-- dropdown  全開放看版-->
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item dropdown-toggle "><em>待審核</em><i class="fa fa-caret-down "></i></a>
+                        <div class="dropdown-content" style="display: block;">
+                            <div class="content  material-full-bottom">
+                                <div class="thumb-layout thumb-layout-page all-one ">
+
+                                    <a>
+
+                                        <em>名稱：王小明</em>
+                                        <em>社區：<span class="area">皇家帝寶</span></em>
+                                        <div class="button no-border btn-right button-yellow btn-top" onclick="javascript:location.href='#'">審核</div>
+                                        <div class="decoration decoration-margins"></div>
+                                    </a>
+
+                                    <a>
+
+                                        <em>名稱：王小明</em>
+                                        <em>社區：<span class="area">皇家帝寶</span></em>
+                                        <div class="button no-border btn-right button-yellow btn-top" onclick="javascript:location.href='#'">審核</div>
+                                        <div class="decoration decoration-margins"></div>
+                                    </a>
+
+                                    <a>
+
+                                        <em>名稱：王小明</em>
+                                        <em>社區：<span class="area">皇家帝寶</span></em>
+                                        <div class="button no-border btn-right button-yellow btn-top" onclick="javascript:location.href='#'">審核</div>
+                                        <div class="decoration decoration-margins"></div>
+                                    </a>
+
+                                </div>
+
+                                <a href="#" class="load-more-thumbs-one button button-full button-blue">顯示更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  End dropdown  全開放看版-->
+                    <div class="footer-margin"></div>
+
+                    <!-- 非全開放看版 -->
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item dropdown-toggle "><em>已審核</em><i class="fa fa-caret-down "></i></a>
+                        <div class="dropdown-content" style="display: block;">
+                            <div class="content  material-full-bottom">
+                                <div class="thumb-layout thumb-layout-page all-two">
+
+                                    <a>
+
+                                        <em>名稱：王小明</em>
+                                        <em>社區：<span class="area">皇家帝寶</span></em>
+                                        <div class="button no-border btn-right button-red btn-top" onclick="javascript:location.href='#'">刪除</div>
+                                        <div class="decoration decoration-margins"></div>
+                                    </a>
+
+                                </div>
+
+                                <a href="#" class="load-more-thumbs-two button button-full button-blue">顯示更多</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End 非全開放看版 -->
+                    <div class="footer-margin"></div>
+
+                </div>
+
+            </div>
+
+            <!-- End Content dropdown -->
+        </div>
+    </div>
+
+    <!-- Fixed Button -->
+    <div class="page-menu light-footer-menu">
+        <div class="footer-menu-wrapper remove-menu">
+            <div class="footer-menu-scroll">
+                <div class="footer-menu">
+                    <a href="social.html" class="footer-menu-item">
+                        <em>社區選擇</em><i class="scale-hover bg-blue-dark fa fa-home"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-menu-controls light-footer-menu">
+        <a href="#" class="footer-menu-open"><i class="scale-hover bg-green-dark fa fa-navicon"></i></a>
+        <a href="#" class="footer-menu-close remove-menu"><i class="fa fa-times bg-yellow-dark"></i><em>Close</em></a>
+    </div>
+    <div class="footer-menu-tap-close remove-menu"></div>
+    <div class="footer-menu-background light-footer-background remove-menu"></div>
+
+    <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to Top</a>
+
+    <!-- End Fixed Button -->
+
+    <!-- 限制字數 -->
+    <script>
+        $(function() {
+            var len = 12; // header超過12個字以"..."取代
+            $(".header12").each(function(i) {
+                if ($(this).text().length > len) {
+                    $(this).attr("title", $(this).text());
+                    var text = $(this).text().substring(0, len - 1) + "...";
+                    $(this).text(text);
+                }
+            });
+
+            var len = 14; // 看板名稱超過14個字以"..."取代
+            $(".board").each(function(i) {
+                if ($(this).text().length > len) {
+                    $(this).attr("title", $(this).text());
+                    var text = $(this).text().substring(0, len - 1) + "...";
+                    $(this).text(text);
+                }
+            });
+
+            var len = 6; // 版主超過6個字以"..."取代
+            $(".host").each(function(i) {
+                if ($(this).text().length > len) {
+                    $(this).attr("title", $(this).text());
+                    var text = $(this).text().substring(0, len - 1) + "...";
+                    $(this).text(text);
+                }
+            });
+
+            var len = 8; // 社區超過8個字以"..."取代
+            $(".area").each(function(i) {
+                if ($(this).text().length > len) {
+                    $(this).attr("title", $(this).text());
+                    var text = $(this).text().substring(0, len - 1) + "...";
+                    $(this).text(text);
+                }
+            });
+
+        });
+    </script>
+    <!-- End 限制字數 -->
+    
+     <!-- 照片上傳 -->
+    <script>
+        window.onload = function() {
+
+            //Check File API support
+            if (window.File && window.FileList && window.FileReader) {
+                var filesInput = document.getElementById("files");
+
+                filesInput.addEventListener("change", function(event) {
+
+                    var files = event.target.files; //FileList object
+                    var output = document.getElementById("result");
+
+                    for (var i = 0; i < files.length; i++) {
+                        var file = files[i];
+
+                        //Only pics
+                        if (!file.type.match('image'))
+                            continue;
+
+                        var picReader = new FileReader();
+
+                        picReader.addEventListener("load", function(event) {
+
+                            var picFile = event.target;
+
+                            var div = document.createElement("div");
+
+                            div.innerHTML = "<img class='thumbnail' src='" + picFile.result + "'" +
+                                "title='" + picFile.name + "'/>";
+
+                            output.insertBefore(div, null);
+
+                        });
+
+                        //Read the image
+                        picReader.readAsDataURL(file);
+                    }
+
+                });
+            } else {
+                console.log("Your browser does not support File API");
+            }
+        }
+    </script>
+
+    <!-- End 照片上傳 -->
+
+</body>

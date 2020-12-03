@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+
+    <title>雲管家</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/skin.css">
+    <link rel="stylesheet" type="text/css" href="styles/framework.css">
+    <link rel="stylesheet" type="text/css" href="styles/custom.css">
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Content -->
+    <div id="page-content" class="page-content header-clear-full">
+        <div id="page-content-scroll">
+
+            <div class="heading-strip bg-2">
+                <h3 class="header12">自行車同好社</h3>
+                <i class="fa fa-chevron-circle-left" onClick="javascript:history.back(1)"></i>
+            </div>
+
+            <div class="material-full-bottom">
+
+                <div class="content material-no-bottom layout-bg ">
+                    <div class="thumb-layout thumb-layout-page  layout-bottom">
+                        <strong class="board">自行車同好社</strong>
+                        <em>版主：<span class="host">王小明</span></em>
+                        <em>社區：<span class="area">皇家帝寶</span></em>
+                        <div class="button no-border btn-right button-red btn-top" onclick="javascript:location.href='#'">退出</div>
+
+                    </div>
+
+                </div>
+
+                <div class="content material-no-bottom  btn-bo-bottom">
+                    <a href="all-new.html" class=" button button-full button-green ">發佈新主題</a>
+                </div>
+
+                <div class="decoration decoration-margins"></div>
+
+                <!-- Content 文章 -->
+                <div class="content material-no-bottom " style="padding-top:0px!important;">
+                    <div class="thumb-layout thumb-layout-page all-one ">
+
+                        <a href="all-article.html">
+                            <strong>車齡1年，大家有推薦台北哪一條路值得一騎嗎？</strong>
+                            <em>發表人：XXX&nbsp;&nbsp;&nbsp;2017.8.11 15:03:22</em>
+
+                            <div class="decoration decoration-margins"></div>
+                        </a>
+
+                        <a href="all-article.html">
+                            <strong>家中小朋友要約騎車，社區附近哪邊有裝輔助輪的店家。</strong>
+                            <em>發表人：XXX&nbsp;&nbsp;&nbsp;2017.8.11 15:03:22</em>
+
+                            <div class="decoration decoration-margins"></div>
+                        </a>
+
+                    </div>
+
+                    <a href="#" class="load-more-thumbs-one button button-full button-blue">顯示更多</a>
+                </div>
+
+                <!-- End Content 文章 -->
+
+                <div class="footer-margin"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- End Content dropdown -->
+
+    <!-- Fixed Button -->
+    <div class="page-menu light-footer-menu">
+        <div class="footer-menu-wrapper remove-menu">
+            <div class="footer-menu-scroll">
+                <div class="footer-menu">
+                    <a href="social.html" class="footer-menu-item">
+                        <em>社區選擇</em><i class="scale-hover bg-blue-dark fa fa-home"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-menu-controls light-footer-menu">
+        <a href="#" class="footer-menu-open"><i class="scale-hover bg-green-dark fa fa-navicon"></i></a>
+        <a href="#" class="footer-menu-close remove-menu"><i class="fa fa-times bg-yellow-dark"></i><em>Close</em></a>
+    </div>
+    <div class="footer-menu-tap-close remove-menu"></div>
+    <div class="footer-menu-background light-footer-background remove-menu"></div>
+
+    <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to Top</a>
+
+    <!-- End Fixed Button -->
+
+    <!-- 限制字數 -->
+    <script>
+        $(function() {
+            var len = 12; // header超過12個字以"..."取代
+            $(".header12").each(function(i) {
+                if ($(this).text().length > len) {
+                    $(this).attr("title", $(this).text());
+                    var text = $(this).text().substring(0, len - 1) + "...";
+                    $(this).text(text);
+                }
+            });
+
+            var len = 14; // 看板名稱超過14個字以"..."取代
+            $(".board").each(function(i) {
+                if ($(this).text().length > len) {
+                    $(this).attr("title", $(this).text());
+                    var text = $(this).text().substring(0, len - 1) + "...";
+                    $(this).text(text);
+                }
+            });
+
+            var len = 6; // 版主超過6個字以"..."取代
+            $(".host").each(function(i) {
+                if ($(this).text().length > len) {
+                    $(this).attr("title", $(this).text());
+                    var text = $(this).text().substring(0, len - 1) + "...";
+                    $(this).text(text);
+                }
+            });
+
+            var len = 8; // 社區超過8個字以"..."取代
+            $(".area").each(function(i) {
+                if ($(this).text().length > len) {
+                    $(this).attr("title", $(this).text());
+                    var text = $(this).text().substring(0, len - 1) + "...";
+                    $(this).text(text);
+                }
+            });
+
+        });
+    </script>
+    <!-- End 限制字數 -->
+    
+
+</body>
